@@ -1,0 +1,140 @@
+
+html{
+    scroll-behavior:smooth;
+    transition: 2s;
+}
+
+body{
+    background-color: rgb(255, 0, 0);
+    overflow-x: hidden;
+}
+.navbar{
+    position: relative;
+    margin-left: 1050px;
+    margin-top: 24px;
+    z-index: 3;
+}
+
+.navbar td, a{
+    transition: 1s;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+.navbar td, a:hover{
+    transition: 1s;
+    color:#d3d3d3 ;
+
+}
+.profile .background{
+    position: relative;
+    display: flex;
+    height: 800px;
+    background: #1B2430;
+    margin: -15px;
+    margin-top: -100px;
+    z-index: 2;
+}
+
+.profile .content img{
+    z-index: 2;
+    display: flex;
+    position: relative;
+    height: 670px;
+    margin-top: -730px;
+    margin-left: -50px;
+}
+.profile .content h1, h2, h3, p{
+    position: relative;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 70px;
+    text-decoration: none;
+    margin: auto;
+    margin-left: 600px;
+    top: -500px;
+    padding-top: 15px;
+    z-index: 2;
+}
+
+.profile .content h2, h3{
+    font-size: 40px;
+    
+}
+.profile .content h2{
+    color: #96BAFF;
+}
+.profile .content h1{
+    font-size: 80px;
+}
+
+.profile .content p{
+    font-size: 20px;
+    font-style: italic;
+    padding-top: 20px;
+}
+
+.profile .content h3::after{
+	content: '';
+	animation: profile infinite 10s ease-in-out;
+	color: #96BAFF;
+	padding: 0 10px;
+}
+    @keyframes profile{
+	0%{
+		content: 'Learning Frontend Developers';
+	}
+
+	20%{
+		content: 'Learning Backend Developers';
+	}
+
+	40%{
+		content: 'Learning Data Scients';
+	}
+
+	60%{
+		content: 'Learning IOT';
+	}
+	80%{
+		content: 'Learning UI/UX Design';
+	}
+	100%{
+		content: 'Content Creator';
+	}
+}
+
+.profile .wave img{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    width: 1530px;
+    margin-top: -130px;
+    top: -220px;
+    height: 50px;
+}
+.skill .background{
+    position: relative;
+    display: flex;
+    background-color: #293340;
+    height: 500px;
+    margin: -300px -15px 0 -15px;
+}
+.skill .title h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    top: -450px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 40px;
+}
+

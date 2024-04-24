@@ -1,0 +1,554 @@
+
+html{
+    scroll-behavior:smooth;
+    transition: 2s;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+
+}
+.home {
+    position: relative;
+    top: -1000px;
+}
+.landing .background video{
+    position: fixed;
+    display: flex;
+    margin: -280px 10px -55px -29px ;
+    height:880px;
+    z-index: 1;
+
+}
+.landing .background h1{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #ffffff;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    font-size: 150px;
+    place-content: center;
+    margin-top: 260px;
+
+}
+.landing .background h1::after{
+	content: '';
+	animation: animate infinite 10s ease-in-out;
+	color: #ffffff;
+	padding: 0 25px;
+}
+    @keyframes animate{
+	0%{
+		content: ' Selamat datang';
+	}
+
+	25%{
+		content: 'Welcome';
+	}
+
+	50%{
+		content: 'Irasshaimase';
+	}
+
+	75%{
+		content: 'Wilujeng';
+	}
+
+	100%{
+		content: 'Sugeng rawuh';
+	}
+}
+
+
+.landing .title{
+    position: relative;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    margin-bottom: -190px;
+    margin-top: 60px;
+}
+.landing .title h1{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 140px;
+    font-size: 20px;
+    transition: 1s ease-in-out;
+}
+.landing .title h1:hover{
+    transition: 1s ease-in-out;
+    transform: translatey(-10px);
+}
+
+.landing .button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 10px;
+    z-index: 2;
+    top: 160px;
+    margin-bottom: 300px;
+    margin: auto;
+
+}
+.landing .button a{
+    transition: 1s ease-in-out;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    height: 12px;
+    top: 1px;
+}
+.landing .button a:hover{
+    transition: 0.5s ease-in-out;
+    background: rgba(255, 255, 255, 0.797);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+
+.option{
+    position: relative;    
+    height: 725px;
+    margin-top: 400px;
+    z-index: 2;
+    width: 100%;
+}
+
+
+.option .homepage{
+    display: flex;
+    margin-top: 110px;
+    flex-wrap: wrap;
+    margin: 30px 10% -320px 10%;
+
+}
+
+.homepage .container{
+    position: relative;
+    display: flex;
+    height: 10px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: -10px;
+    
+}
+
+.homepage .container img{
+    position: relative;
+    display: flex;
+    height: 125px;
+}
+.homepage .container h1 ,a{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 13px;
+    margin: auto;
+    top: -25px;
+    justify-content: center;
+    text-align: center;
+}
+
+.option .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 500px;
+    margin-top: 825px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.card .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+
+}
+.card .container a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin: auto;
+    border-radius: 30px;
+}
+.card .container img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 7px;
+    height: 85px;
+    padding: auto;
+}
+.reveal {
+    position: relative;
+    transform:translateY('100px');
+    transform: scale(1.5);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .landing .background video{
+        position: fixed;
+        display: flex;
+        margin: -270px 10px -155px -300px ;
+        height:1000px;
+        z-index: 1;
+    
+    }
+    .landing .background h1{
+        position: relative;
+        display: flex;
+        top: 100px;
+        z-index: 1;
+        font-family: 'Poppins', sans-serif;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 2px #ffffff;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 700;
+        font-size: 80px;
+        place-content: center;
+        margin-top: 270px;
+        align-items: center;
+    
+    }
+    .landing .title h1{
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        text-decoration: none;
+        margin-top: 450px;
+        font-size: 20px;
+        transition: 1s ease-in-out;
+    }
+    .landing .title h1:hover{
+        transition: 1s ease-in-out;
+        transform: translatey(-10px);
+    }
+    .landing .button{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        height: 10px;
+        z-index: 2;
+        top: 170px;
+        margin-bottom: 500px;
+        margin: auto;
+    
+    }
+    .landing .button a{
+        transition: 1s ease-in-out;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 10px;
+        height: 12px;
+        top: 1px;
+        margin-bottom: 100px;
+    }
+    .landing .button a:hover{
+        transition: 0.5s ease-in-out;
+        background: rgba(255, 255, 255, 0.797);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 10px;
+    }
+    .option{
+        position: relative;    
+        height: 525px;
+        margin-top: 600px;
+        z-index: 2;
+        width: 100%;
+    }
+    .option .homepage{
+    display: flex;
+    margin-top: 110px;
+    flex-wrap: wrap;
+    margin: 130px 10% -650px 10%;
+
+}
+
+.homepage .container{
+    position: relative;
+    display: flex;
+    height: 10px;
+    flex-wrap: wrap;
+    top: -100px;
+    margin-top: 100px;
+    margin-left: -10px;
+    
+}
+
+.homepage .container img{
+    position: relative;
+    display: flex;
+    height: 125px;
+}
+.homepage .container h1 ,a{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 13px;
+    margin: auto;
+    top: -25px;
+    justify-content: center;
+    text-align: center;
+}
+
+.option .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 500px;
+    margin-top: 1200px;
+    justify-content: center;
+    margin-bottom: 100px;
+
+}
+.card .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+
+}
+.card .container a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin: auto;
+    border-radius: 30px;
+}
+.card .container img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 7px;
+    height: 85px;
+    padding: auto;
+}
+}
+@media only screen and (max-width: 360px) {
+    
+    .landing .background video{
+        position: fixed;
+        display: flex;
+        margin: -270px 10px -55px -500px ;
+        height:780px;
+        z-index: 1;
+    
+    }
+    .landing .background h1{
+        position: relative;
+        display: flex;
+        top: 50px;
+        z-index: 1;
+        font-family: 'Poppins', sans-serif;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px #ffffff;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 700;
+        font-size: 30px;
+        place-content: center;
+        margin-top: 260px;
+        align-items: center;
+    
+    }
+    .landing .title h1{
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        text-decoration: none;
+        margin-top: 300px;
+        font-size: 20px;
+        transition: 1s ease-in-out;
+    }
+    .landing .title h1:hover{
+        transition: 1s ease-in-out;
+        transform: translatey(-10px);
+    }
+    .landing .button{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        height: 10px;
+        z-index: 2;
+        top: 170px;
+        margin-bottom: 500px;
+        margin: auto;
+    
+    }
+    .landing .button a{
+        transition: 1s ease-in-out;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 10px;
+        height: 7px;
+        top: 1px;
+        margin-bottom: 100px;
+    }
+    .landing .button a:hover{
+        transition: 0.5s ease-in-out;
+        background: rgba(255, 255, 255, 0.797);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 10px;
+    }
+    .option{
+        position: relative;    
+        height: 525px;
+        margin-top: 600px;
+        z-index: 2;
+        width: 100%;
+    }
+    .option .homepage{
+    display: flex;
+    margin-top: 110px;
+    flex-wrap: wrap;
+    margin: 130px 10% -450px 10%;
+
+}
+
+.homepage .container{
+    position: relative;
+    display: flex;
+    height: 5px;
+    flex-wrap: wrap;
+    top: 100px;
+    margin-top: 80px;
+    margin-left: -10px;
+    
+}
+
+.homepage .container img{
+    position: relative;
+    display: flex;
+    height: 100px;
+}
+.homepage .container h1 ,a{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 13px;
+    margin: auto;
+    top: -20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.option .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 300px;
+    margin-top: 1050px;
+    justify-content: center;
+    margin-bottom: 100px;
+
+}
+.card .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    width: 50px;
+    margin: -5px;
+    padding: auto;
+
+}
+.card .container a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin: auto;
+    border-radius: 30px;
+}
+.card .container img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 65px;
+    padding: 13px;
+}
+}
